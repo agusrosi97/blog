@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/typed.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+ 
+ *{
+  padding: 0;
+  margin-top: 0;
+
+ }
+.sidenav {
+  height: 100%;
+  width: 330px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  /*position: absolute;
+      bottom: 0;*/
+   /*   top: 0;
+      right: 0;*/
+      /*margin-bottom: 0;*/
+  /*margin-top: 20px;*/ 
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 350px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  height: 1000px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.bung-typed{
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 80%;
+  font-size: 25px;
+
+}
+
+.sosmed{
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <img class="logo" src="gbr/ubuntu.png">
+    <div class="bung-typed">
+      <div id="typed-strings">
+        <p><em>"Saya Arta"</em></p>
+        <p><em>"Terima Kasih Sudah Berkunjung".</em></p>
+        </div>
+        <span id="typed"></span>
+    </div>
+    <div id="sosmed">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<div class="main">
+  <h2>Sidebar</h2>
+  <p>This sidebar is of full height (100%) and always shown.</p>
+  <p>Scroll down the page to see the result.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+<!-- <script>
+    $('document').ready(function(){
+      var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings'
+      });
+    });
+
+</script> -->
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed:80
+
+  });
+</script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+   
+</body>
+</html> 
